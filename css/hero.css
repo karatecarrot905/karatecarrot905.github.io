@@ -1,0 +1,47 @@
+.hero{ padding:2rem 0 0; }
+
+.name-row{
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:center;
+  gap:.3em;
+  font-size:clamp(2.2rem,9vw,6rem);
+}
+.name-row .name{
+  margin:0;
+  font-size:inherit;
+  font-weight:800;
+  letter-spacing:-.04em;
+  white-space:nowrap;
+}
+.name-row .avatar{
+  flex:0 0 auto;
+  display:block;
+  width:1em;
+  height:1em;
+  border-radius:50%;
+  object-fit:cover;
+  object-position:center;
+}
+
+/* Intro text */
+.hero .role{
+  max-width:34rem;
+  margin:1rem 0 .5rem;
+  font-family:var(--display);
+  font-size:clamp(1.25rem,3vw,1.75rem);
+  font-weight:500;
+  line-height:1.25;
+}
+.hero .sub{ max-width:36rem; margin:0; color:var(--muted); }
+
+/* Animated sound wave */
+#wave{ display:block; width:100%; height:9rem; margin-top:1.5rem; }
+#wave path{
+  fill:none;
+  stroke:var(--signal);
+  stroke-width:2.5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.wavecap{ margin:.25rem 0 0; font-size:.875rem; color:var(--muted); }
